@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px; /
+            height: 150px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Webpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Introduction</h2>
+        <p>This is my personal webpage where you can learn more about me, my education, and how to contact me.</p>
+        <img src="/Users/Maddy/Desktop/WebMobile1/photo.jpg" alt="Profile Picture">
+    </section>
+
+    <section id="education">
+        <h2>My Education</h2>
+        <p>Details about my education...</p>
+
+        <h2>Weekly Schedule</h2>
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+               
+            </tr>
+            <tr>
+                <td>8:30</td>
+                <td>Off</td>
+                <td>Web&MobileI</td>
+                <td>Off</td>
+                <td>Web&MobileI</td>
+              
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>Probability&Statistics</td>
+                <td>Off</td>
+                <td>Probability&Statistics</td>
+                <td>Off</td>
+               
+            </tr>
+
+            <tr>
+                <td>1:00</td>
+                <td>Off</td>
+                <td>PhysicsI</td>
+                <td>Off</td>
+                <td>PhysicsI</td>
+                
+            </tr>
+            <tr>
+                <td>2:30</td>
+                <td>Off</td>
+                <td>IntroToNetworks</td>
+                <td>IntroToAgr.</td>
+                <td>IntroToNetworks</td>
+            </tr>
+            <tr>
+                <td>4:00</td>
+                <td>Off</td>
+                <td>Off</td>
+                <td>IntroToAgr.</td>
+                <td>Off</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:medine938@icloud.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</body>
+</html>
